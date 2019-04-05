@@ -4,15 +4,17 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	int a,b;
-	printf("請輸入現在幾點");
+	int a,b,c;
+	printf("輸入1個數字:");
 	scanf("%d",&a);
-	printf("請輸入現在幾分");
+    printf("輸入1個數字:");
 	scanf("%d",&b);
-	if((a==7&&b>=30)||(a>7&&a<17))
-	printf("上學時間");
+	printf("輸入1個數字:");
+	scanf("%d",&c);
+	if(a+b>c&&a+c>b&b+c>a)
+	printf("是個三角形\n");
 	else
-	printf("放學時間");
+	printf("不是三角形\n");
 	system("pause");
 	return 0;
 }
